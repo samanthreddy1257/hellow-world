@@ -1,0 +1,15 @@
+pipeline {
+    
+    agent any
+    
+    stages {
+        
+        stage ('git checkout'){
+            steps {
+                script {
+                    git branch: 'main', url: 'https://github.com/samanthreddy1257/hellow-world.git'
+                }
+            }
+        }
+    }
+}
