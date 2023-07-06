@@ -18,10 +18,16 @@ pipeline {
                 }
             }
         }
-        stage ('mvn verify'){
+        stage ('mvn integration test'){
             steps {
                 script{
                     sh 'mvn verify -DskipUnitest'
+                }
+            }
+        }
+        stage ('mvn build war file')
+            steps {
+                sh 'mvn clean package '
                 }
             }
         }
