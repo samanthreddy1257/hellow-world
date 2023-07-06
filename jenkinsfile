@@ -25,7 +25,7 @@ pipeline {
                 }
             }
         }
-        stage ('sonar code analasis')
+        stage ('sonar code analasis'){
             steps {
                 script {
                     sh 'mvn clean package sonar:sonar'
