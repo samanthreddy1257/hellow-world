@@ -25,12 +25,6 @@ pipeline {
                 }
             }
         }
-        stage ('mvn build war file')
-            steps {
-                script {
-                    sh 'mvn clean package '
-                }
-            }
-        }
+       
     }
 }
