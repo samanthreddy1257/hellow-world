@@ -18,5 +18,12 @@ pipeline {
                 }
             }
         }
+        stage ('mvn verify'){
+            steps {
+                script{
+                    sh 'mvn verify -DskipUnitest'
+                }
+            }
+        }
     }
 }
