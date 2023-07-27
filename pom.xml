@@ -14,12 +14,7 @@
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
-<properties>
-  <sonar.host.url>http://54.205.78.108:9000</sonar.host.url>
-  <sonar.login>sqa_aac29cbdf13805455f84764353ea9266839f38cd</sonar.login>
-  <sonar.language>java</sonar.language>
-  <sonar.scm.provider>git</sonar.scm.provider>
-</properties>
+
   <modules>
     <module>server</module>
     <module>webapp</module>
